@@ -5,7 +5,7 @@ import javax.swing.*;
 public class MyFrame extends JFrame {
 
     public MyFrame() {
-        setTitle("Gra");
+        setTitle("Game");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1000, 600);
 

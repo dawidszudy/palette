@@ -58,13 +58,13 @@ public class MyComponent extends JComponent {
         graphics2d.fill(Palette.getShape());
 
         graphics2d.setPaint(Color.BLACK);
-        graphics2d.drawString("Ilość żyć: ", Utils.maxWidth + 10, 20);
+        graphics2d.drawString("Number of lives: ", Utils.maxWidth + 10, 20);
         graphics2d.setFont(graphics2d.getFont().deriveFont(50.0F));
-        graphics2d.drawString(String.valueOf(Utils.lives), Utils.maxWidth + 20, 70);
+        graphics2d.drawString(String.valueOf(Utils.lives), Utils.maxWidth + 35, 70);
 
         graphics2d.setPaint(Color.BLACK);
         graphics2d.setFont(graphics2d.getFont().deriveFont(30.0F));
-        graphics2d.drawString("Punkty: ", Utils.maxWidth + 10, 200);
+        graphics2d.drawString("Points: ", Utils.maxWidth + 10, 200);
         graphics2d.drawString(String.valueOf(points), Utils.maxWidth + 40, 240);
 
 
@@ -73,7 +73,7 @@ public class MyComponent extends JComponent {
             graphics2d.fill(limit2);
             graphics2d.setPaint(Color.BLACK);
             graphics2d.setFont(graphics2d.getFont().deriveFont(50.0F));
-            graphics2d.drawString("Przegrałeś, koniec gry", 30, 100);
+            graphics2d.drawString("You lost, game over", 30, 100);
         }
 
         if ( win() ) {
@@ -81,7 +81,7 @@ public class MyComponent extends JComponent {
             graphics2d.fill(limit2);
             graphics2d.setPaint(Color.BLACK);
             graphics2d.setFont(graphics2d.getFont().deriveFont(50.0F));
-            graphics2d.drawString("Wygrałeś, koniec gry", 30, 100);
+            graphics2d.drawString("You win, game over", 30, 100);
         }
 
     }

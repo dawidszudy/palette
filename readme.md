@@ -17,7 +17,7 @@ We can collect coins and catch ball with a palette.
 ## Features
 - Board
 - Coins and palette
-- Amount lifes
+- Number of lives
 - Amount of collected coins
 
 ### Functions of game
